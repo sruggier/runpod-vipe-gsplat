@@ -1,4 +1,4 @@
-FROM sruggier/runpod-vipe:test
+FROM sruggier/runpod-vipe:main
 
 # Below lines adapted from
 # https://github.com/astral-sh/uv-docker-example/blob/main/Dockerfile
