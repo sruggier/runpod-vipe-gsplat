@@ -1,4 +1,4 @@
-FROM sruggier/runpod-vipe:main
+FROM sruggier/runpod-vipe@sha256:11909c88a38351944e8bc4d1242690c416398993569fb92cf88d829fd4d760f2
 
 # Below lines adapted from
 # https://github.com/astral-sh/uv-docker-example/blob/main/Dockerfile
