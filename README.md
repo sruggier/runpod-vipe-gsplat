@@ -39,3 +39,36 @@ models.
    	--test-every 1000 \
    	--eval-steps 1000000
    ```
+
+## End-to-end script example
+
+For demonstration purposes, there's a minimal script
+([run-vipe-gsplat](https://github.com/sruggier/run-vipe-gsplat)) that runs ViPE,
+vipe_to_colmap.py, and gsplat automatically. It can be used like so:
+
+1. Set up an environment by following
+   [the preparation steps here](https://github.com/sruggier/vipe/blob/tutorial/README.md#preparation),
+   but use [this template](https://console.runpod.io/hub/template/qnkno00wff)
+   instead of the given one, so gsplat is available.
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sruggier/run-vipe-gsplat.git /tmp/run-vipe-gsplat
+   ```
+
+1. Create a virtual environment for the script:
+
+   ```bash
+   cd /tmp/run-vipe-gsplat
+   uv sync
+   ```
+
+1. Execute the pipeline:
+
+   ```bash
+   .venv/bin/run-vipe-gsplat \
+   	--dataset path/to/images \
+   	--output-path /workspace/output/combined/run1 \
+   	--visualize
+   ```
