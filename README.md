@@ -2,9 +2,11 @@
 
 This repository combines [ViPE](https://github.com/nv-tlabs/vipe) and
 [gsplat](https://github.com/nerfstudio-project/gsplat) into a single container
-image, where ViPE can be used to process videos and images into pose estimates
-and point clouds, which can be fed into gsplat to train 3D Gaussian splatting
-models.
+image
+([sruggier/runpod-vipe-gsplat](https://hub.docker.com/r/sruggier/runpod-vipe-gsplat)
+on Docker Hub), where ViPE can be used to process videos and images into pose
+estimates and point clouds, and those can be fed into gsplat to train 3D
+Gaussian splatting models.
 
 ## Basic usage
 
